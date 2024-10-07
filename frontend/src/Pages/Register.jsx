@@ -1,24 +1,18 @@
 import React, { useState } from 'react';
 import logo from '../assets/stationsaarthi.svg'; // Ensure the path is correct
 import { useNavigate } from 'react-router-dom';
-<<<<<<< HEAD
 import backicon from '../assets/svg/backicon.svg';
-=======
 
->>>>>>> f79a0616cca434699eaa1820cb1a5370eac5632f
 const Register = () => {
 
     const navigate = useNavigate();
     const LoginClick = () => {
         navigate('/Login'); // Navigates to the login page
     };
-<<<<<<< HEAD
+
     const HomeClick = () => {
         navigate('/'); // Navigates to the home page
     };
-=======
->>>>>>> f79a0616cca434699eaa1820cb1a5370eac5632f
-    
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [email, setEmail] = useState('');
@@ -30,16 +24,13 @@ const Register = () => {
     };
 
     return (
-<<<<<<< HEAD
+
         <>
        
         <div className="flex flex-col items-center justify-center min-h-screen px-4 bg-gradient-to-b from-blue-100 to-blue-5000">
             {/* Logo and Title */}
              <div ><button onClick={HomeClick}><img src={backicon} alt="" srcset="" className='fixed left-[1vh] h-[9vh] w-auto' /></button></div>
-=======
-        <div className="flex flex-col items-center justify-center min-h-screen px-4 bg-gradient-to-b from-blue-100 to-blue-5000">
-            {/* Logo and Title */}
->>>>>>> f79a0616cca434699eaa1820cb1a5370eac5632f
+
             <div className="mb-6 text-center">
                 <img src={logo} alt="Station Saarthi Logo" className="w-20 mx-auto mb-2 h-22" />
                 <h1 className="text-2xl font-bold text-gray-800">Station Saarthi</h1>
