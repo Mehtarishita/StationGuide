@@ -1,11 +1,8 @@
 import React, { useState } from 'react'; 
 import logo from '../assets/stationsaarthi.svg'; // Import your logo 
 import { useNavigate } from 'react-router-dom';
-<<<<<<< HEAD
 import backicon from '../assets/svg/backicon.svg'; // Assuming you have a back icon
-=======
 
->>>>>>> f79a0616cca434699eaa1820cb1a5370eac5632f
 const Login = () => {
     const [username, setUsername] = useState(''); 
     const [password, setPassword] = useState(''); 
@@ -13,12 +10,10 @@ const Login = () => {
     const RegisterClick = () => {
         navigate('/Register'); // Navigates to the login page
     }
-<<<<<<< HEAD
     const HomeClick = () => {   
         navigate('/'); // Navigates to the home page
     }
-=======
->>>>>>> f79a0616cca434699eaa1820cb1a5370eac5632f
+
     const handleLogin = (e) => { 
         e.preventDefault(); 
         // Handle login logic here 
@@ -28,10 +23,9 @@ const Login = () => {
     return ( 
         <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-100 to-blue-5000">
             {/* Logo and Title */} 
-<<<<<<< HEAD
+
             <div ><button onClick={HomeClick}><img src={backicon} alt="" srcset="" className='fixed left-[1vh] h-[9vh] w-auto' /></button></div>
-=======
->>>>>>> f79a0616cca434699eaa1820cb1a5370eac5632f
+
             <div className="mb-10 text-center ">
                 <img src={logo} alt="Station Saarthi Logo" className="w-20 mx-auto h-22 " />
                 <h1 className="mt-4 text-4xl font-bold text-gray-800 ">Station Saarthi</h1>
